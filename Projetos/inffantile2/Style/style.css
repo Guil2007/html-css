@@ -39,7 +39,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 0 20px 20px 20px;
     max-width: 1400px;
     margin: 0 auto; /* Centraliza a página horizontalmente */
     min-width: 320px; /* Garante que a página seja legível em telas menores */
@@ -48,7 +48,7 @@ body {
 main {
     background-color: #fafbfc;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 0px 15px 15px 15px;
     max-width: 1000px;
     margin: 10px auto; /* Centraliza o conteúdo principal horizontalmente */
     min-width: 320px; /* Garante que o conteúdo seja legível em telas menores */
@@ -163,8 +163,9 @@ h1 {
 h2 {
     font-family: 'indie flower', cursive;
     text-align: center;
+    padding: 20px;
     color: #220336;
-    font-size: 2.5em;
+    font-size: 2.8em;
     font-weight: bold;
     font-style: italic;
     text-decoration: none;
@@ -180,6 +181,7 @@ p {
   font-size: 1.8em;
   margin: 20px 0;
   text-indent: 30px;
+  padding: 15px;
 }
 
  .container {
@@ -219,7 +221,7 @@ p {
     font-weight: bold;
     text-shadow: #593d36 2px 2px 4px;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 0px 20px 20px 20px;
     background-color: #F2CEDF;
     box-shadow: #4facf84d 0px 0px 10px, #1776f34b 0px 0px 20px, #0400ff46 0px 0px 30px;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -255,7 +257,7 @@ p {
     font-family: 'Indie Flower', cursive;
     font-size: 1.2em;
     margin-top: 20px;
-    border-radius: 20px;
+    border-radius: 0px 20px 20px 20px;
   } 
 
   footer> p {
