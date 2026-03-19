@@ -179,7 +179,7 @@ p {
   text-align: justify;
   color: #220336;
   font-size: 1.8em;
-  margin: 20px 0;
+  margin: 0px 0;
   text-indent: 30px;
   padding: 15px;
 }
@@ -233,6 +233,64 @@ p {
     gap: 20px; /* Espaço entre os vídeos */
     flex-wrap: wrap; /* Permite que os vídeos se ajustem em telas menores */
     margin-top: 20px;
+  }
+
+  div.produtosfemininos {
+    display: inline-block;
+    justify-content: center;
+    height: auto;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+
+  /*div.produtosfemininos img {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: #4facf84d 0px 0px 10px, #1776f34b 0px 0px 20px, #0400ff46 0px 0px 30px;
+    transition: transform 0.3s ease;
+  }*/
+
+  div#pf1 img {
+    /*width: 400px; /* Largura fixa para as imagens dos produtos */
+    height: auto; /* Mantém a proporção das imagens */
+    border-radius: 15px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+
+    div#pf2 img {
+     /*width: 200px; /* Largura fixa para as imagens dos produtos */
+     height: auto; /* Mantém a proporção das imagens */
+     margin-bottom: 20px;
+     border-radius: 10px;
+     transition: transform 0.3s ease;
+      }
+
+    div#pf3 img {
+    /* width: 200px; /* Largura fixa para as imagens dos produtos */
+     height: auto; /* Mantém a proporção das imagens */
+     border-radius: 15px;
+     margin-bottom: 10px;
+     transition: transform 0.3s ease;
+      }
+
+
+  div#pf1 img:hover {
+    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+    
+  }
+
+  div#pf2 img:hover {
+    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+    
+  } 
+
+  div#pf3 img:hover {
+    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+    
   }
 
   div.feminina {
