@@ -71,12 +71,13 @@ header {
 }
 
 .navbar ul {
-  display: flex;
-  list-style: none; /* Remove bolinhas */
-  padding: 0px;
-  gap: 40px; /* Espaço entre os itens */
-  margin: 0px;
-  justify-content: center; /* Centraliza o menu (pode usar flex-start ou space-between) */
+    max-width: 100%;
+    display: flex;
+    list-style: none; /* Remove bolinhas */
+    padding: 0px;
+    gap: 20px; /* Espaço entre os itens */
+    margin: 0px;
+    justify-content: center; /* Centraliza o menu (pode usar flex-start ou space-between) */
 }
 
 /*strong {
@@ -88,6 +89,7 @@ header {
 }*/
 
 .navbar a {
+    max-width: 100%;
     font-family: Arial, sans-serif;
     font-size: large;
     font-weight: bold;
@@ -199,7 +201,8 @@ p {
     display: flex; /* Cria o layout de caixa flexível [4] */
     justify-content: space-between; /* Distribui as imagens lateralmente [4] */
     align-items: center; /* Centraliza verticalmente [4] */
-    width: 100%;
+    max-width: 100%;
+    height: auto;
     flex: 1;
     text-align: center;
   }
@@ -251,6 +254,7 @@ p {
   }
 
   div.produtosfemininos {
+    max-width: 100%;
     display: inline-block;
     justify-content: center;
     height: auto;
@@ -272,7 +276,7 @@ p {
   }
 
     div#pi1 img {
-    /*width: 400px; /* Largura fixa para as imagens dos produtos */
+        max-width: 100%;
         height: auto; /* Mantém a proporção das imagens */
         border-radius: 15px;
         margin-bottom: 10px;
@@ -280,7 +284,7 @@ p {
         }
 
     div#pi2 img {
-         /*width: 200px; /* Largura fixa para as imagens dos produtos */
+         max-width: 100%; /* Garante que as imagens não ultrapassem a largura do contêiner */
          height: auto; /* Mantém a proporção das imagens */
          margin-bottom: 20px;
          border-radius: 10px;
@@ -288,7 +292,7 @@ p {
         }
     
     div#pi3 img {
-        /* width: 200px; /* Largura fixa para as imagens dos produtos */
+         max-width: 100%;
          height: auto; /* Mantém a proporção das imagens */
          border-radius: 15px;
          margin-bottom: 10px;
@@ -380,7 +384,8 @@ p {
     background-attachment: fixed;
     padding: 10px;
     border-radius: 20px;
-    max-width: 1400px;
+    max-width: 100%;
+    height: auto;
     margin: 0 auto; /* Centraliza a página horizontalmente */
     margin-top: 10px;
     min-width: 320px; /* Garante que a página seja legível em telas menores */  
