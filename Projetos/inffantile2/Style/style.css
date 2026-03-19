@@ -203,10 +203,12 @@ p {
     flex: 1;
     text-align: center;
   }
+
   .item {
     flex: 1; /* Faz com que cada div ocupe espaço igual */
     text-align: center; /* Centraliza a imagem dentro de sua área */
   }
+
 
   .lista-horizontal {
     display: flex;
@@ -274,7 +276,7 @@ p {
         height: auto; /* Mantém a proporção das imagens */
         border-radius: 15px;
         margin-bottom: 10px;
-        transition: transform 0.3s ease;
+        transition: transform 0.5s ease;
         }
 
     div#pi2 img {
@@ -282,7 +284,7 @@ p {
          height: auto; /* Mantém a proporção das imagens */
          margin-bottom: 20px;
          border-radius: 10px;
-         transition: transform 0.3s ease;
+         transition: transform 0.5s ease;
         }
     
     div#pi3 img {
@@ -290,10 +292,39 @@ p {
          height: auto; /* Mantém a proporção das imagens */
          border-radius: 15px;
          margin-bottom: 10px;
-         transition: transform 0.3s ease;
+         transition: transform 0.5s ease;
         }
 
+    div#pi1 img:hover {
+    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+    }
     
+
+
+    div#pi2 img.imagehover {
+        display: none; /* Esconde a imagem alternativa por padrão */
+    }
+
+    div#pi2:hover img.imagedefault {
+        display: none; /* Esconde a imagem padrão ao passar o mouse */
+    }
+    div#pi2:hover img.imagehover {
+        display: inherit; /* Mostra a imagem alternativa ao passar o mouse */
+    }
+   
+
+
+    
+    div#pi3 img.imagehover {
+        display: none; /* Esconde a imagem alternativa por padrão */
+    }
+
+    div#pi3:hover img.imagedefault {
+        display: none; /* Esconde a imagem padrão ao passar o mouse */
+    }
+    div#pi3:hover img.imagehover {
+        display: inherit; /* Mostra a imagem alternativa ao passar o mouse */
+    }
 
   
     /*div.produtosfemininos img {
