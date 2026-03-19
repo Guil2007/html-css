@@ -280,7 +280,7 @@ p {
         height: auto; /* Mantém a proporção das imagens */
         border-radius: 15px;
         margin-bottom: 10px;
-        transition: transform 0.5s ease-in-out;
+    
         }
 
     div#pi2 img {
@@ -288,7 +288,7 @@ p {
          height: auto; /* Mantém a proporção das imagens */
          margin-bottom: 20px;
          border-radius: 10px;
-         transition: transform 0.5s ease-in-out;
+         
         }
     
     div#pi3 img {
@@ -296,40 +296,44 @@ p {
          height: auto; /* Mantém a proporção das imagens */
          border-radius: 15px;
          margin-bottom: 10px;
-         transition: transform 0.5s ease-in-out;
+         
         }
 
     div#pi1 img:hover {
     transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
     }
     
-
+    .imagedefault, .imagehover {
+    transition: opacity 0.5s ease-in-out;
+    }
 
     div#pi2 img.imagehover {
         display: none; /* Esconde a imagem alternativa por padrão */
+        opacity: 0;
     }
 
     div#pi2:hover img.imagedefault {
         display: none; /* Esconde a imagem padrão ao passar o mouse */
-        transition: opacity 0.5 s ease-in-out;
+        opacity: 0;
     }
     div#pi2:hover img.imagehover {
         display: inherit; /* Mostra a imagem alternativa ao passar o mouse */
-        transition: opacity 0.5s ease-in-out;
+        opacity: 1;
     }
     
     div#pi3 img.imagehover {
         display: none; /* Esconde a imagem alternativa por padrão */
-        transition: opacity 0.5s ease-in-out;
+        opacity: 0;
     }
 
     div#pi3:hover img.imagedefault {
         display: none; /* Esconde a imagem padrão ao passar o mouse */
-        transition: opacity 0.5s ease-in-out;
+        opacity: 0;
     }
+    
     div#pi3:hover img.imagehover {
         display: inherit; /* Mostra a imagem alternativa ao passar o mouse */
-        transition: opacity 0.5s ease-in-out;
+        opacity: 1;
     }
 
   
