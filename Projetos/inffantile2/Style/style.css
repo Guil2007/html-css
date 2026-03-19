@@ -47,11 +47,12 @@ body {
 
 main {
     background-color: #fafbfc;
-    padding: 10px;
+    padding: 30px;
     border-radius: 0px 15px 15px 15px;
     max-width: 1000px;
     margin: 10px auto; /* Centraliza o conteúdo principal horizontalmente */
     min-width: 320px; /* Garante que o conteúdo seja legível em telas menores */
+    height: auto;
 }
 
 image {
@@ -184,11 +185,23 @@ p {
   padding: 15px;
 }
 
+.paragrafosemindentacao {
+    font-family: "Indie Flower", cursive;
+    font-weight: 600;
+    font-style: normal;
+    text-align: left;
+    color: #220336;
+    font-size: 1.3em;
+    margin: 0px 0;
+    padding: 0px;
+}
  .container {
     display: flex; /* Cria o layout de caixa flexível [4] */
     justify-content: space-between; /* Distribui as imagens lateralmente [4] */
     align-items: center; /* Centraliza verticalmente [4] */
     width: 100%;
+    flex: 1;
+    text-align: center;
   }
   .item {
     flex: 1; /* Faz com que cada div ocupe espaço igual */
@@ -245,7 +258,45 @@ p {
     margin-bottom: 50px;
   }
 
-  /*div.produtosfemininos img {
+  div.produtosinfantis {
+    display: inline-block;
+    /*justify-content: center;*/
+    width: auto;
+    height: auto;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+
+    div#pi1 img {
+    /*width: 400px; /* Largura fixa para as imagens dos produtos */
+        height: auto; /* Mantém a proporção das imagens */
+        border-radius: 15px;
+        margin-bottom: 10px;
+        transition: transform 0.3s ease;
+        }
+
+    div#pi2 img {
+         /*width: 200px; /* Largura fixa para as imagens dos produtos */
+         height: auto; /* Mantém a proporção das imagens */
+         margin-bottom: 20px;
+         border-radius: 10px;
+         transition: transform 0.3s ease;
+        }
+    
+    div#pi3 img {
+        /* width: 200px; /* Largura fixa para as imagens dos produtos */
+         height: auto; /* Mantém a proporção das imagens */
+         border-radius: 15px;
+         margin-bottom: 10px;
+         transition: transform 0.3s ease;
+        }
+
+    
+
+  
+    /*div.produtosfemininos img {
     width: 200px;
     height: auto;
     border-radius: 15px;
@@ -253,13 +304,13 @@ p {
     transition: transform 0.3s ease;
   }*/
 
-  div#pf1 img {
-    /*width: 400px; /* Largura fixa para as imagens dos produtos */
-    height: auto; /* Mantém a proporção das imagens */
-    border-radius: 15px;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease;
-  }
+    div#pf1 img {
+        /*width: 400px; /* Largura fixa para as imagens dos produtos */
+        height: auto; /* Mantém a proporção das imagens */
+        border-radius: 15px;
+        margin-bottom: 10px;
+        transition: transform 0.3s ease;
+    }
 
     div#pf2 img {
      /*width: 200px; /* Largura fixa para as imagens dos produtos */
@@ -267,7 +318,7 @@ p {
      margin-bottom: 20px;
      border-radius: 10px;
      transition: transform 0.3s ease;
-      }
+    }
 
     div#pf3 img {
     /* width: 200px; /* Largura fixa para as imagens dos produtos */
@@ -275,25 +326,25 @@ p {
      border-radius: 15px;
      margin-bottom: 10px;
      transition: transform 0.3s ease;
-      }
+    }
 
 
-  div#pf1 img:hover {
+    div#pf1 img:hover {
     transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
     
-  }
+    }
 
-  div#pf2 img:hover {
+    div#pf2 img:hover {
     transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
     
-  } 
+    } 
 
-  div#pf3 img:hover {
+    div#pf3 img:hover {
     transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
     
-  }
+    }
 
-  div.feminina {
+    div.feminina {
     background-size: cover;
     background-attachment: fixed;
     padding: 10px;
@@ -302,7 +353,7 @@ p {
     margin: 0 auto; /* Centraliza a página horizontalmente */
     margin-top: 10px;
     min-width: 320px; /* Garante que a página seja legível em telas menores */  
-  }
+    }
  
   footer {
     min-width: 320px; /* Garante que o rodapé seja legível em telas menores */
